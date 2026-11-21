@@ -99,13 +99,11 @@ nav a:hover {
 }
 .hero-image {
   flex: 1;
-  min-height: 360px;
+  min-width: 0;
+  height: 360px;
   border-radius: 16px;
   background: var(--dark);
-  color: var(--muted);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  object-fit: cover;
 }
 .hero-text .badge {
   display: inline-block;
@@ -416,8 +414,9 @@ h2 {
     flex-direction: column;
   }
   .hero-image {
+    flex: none;
     width: 100%;
-    min-height: 220px;
+    height: 220px;
   }
   .services-grid,
   .steps-list,
